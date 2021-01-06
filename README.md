@@ -1,2 +1,2 @@
 # vienn_public
-Vien Ngo's student public repo
+Vien Ngo's Public Repo for CIT 95
