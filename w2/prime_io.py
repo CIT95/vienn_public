@@ -12,7 +12,7 @@ else:
     # checks to see if the number is divisble by 2, 3, 5 and 7;
     #  if they are, they are not prime numbers.
     for i in range(beginning_num, ending_num):
-        if i > 1:
+        if i > 1: # learned this from Rio's code. 1 is not a prime number.
             if i % 2 != 0 and i % 3 != 0 and i % 5 != 0 and i % 7 != 0: 
                 print(i)
             # but, if the numbers are 2, 3, 5 or 7, they are prime numbers
