@@ -20,5 +20,5 @@ def getWage():
 getWage() 
 
 #running weeklyPay() without an hours agrument. Default value of 40 would be used.
-print(f"\nThe following output is when we run: weeklyPay(2) which will use the default value")
+print(f"\nThe following output is when we run: weeklyPay(15.75) which will use the default value")
 weeklyPay(15.75) 
