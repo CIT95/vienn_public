@@ -1,0 +1,3 @@
+vinnie:a
+johnny:f
+king:c
