@@ -16,10 +16,15 @@ def getInfo():
     get user's input
     """
     try:
-        number = int(input("Please enter a number: ")) 
+        number = int(input("Please enter a number: "))
+        if number == 111:
+            raise Exception 
     except ValueError: # alerting user to enter a numberical number
         print('Please enter a numerical value.')
         SystemExit
+    except Exception:
+        print("That's the magic number!")
+        print(fizz_buzz(number))
     else: # if the try block is true, thank you the user and run the fizz_buzz()
         print("Thank you for entering numerical value!")
         print(fizz_buzz(number)) # passes number into fizz_buzz function
