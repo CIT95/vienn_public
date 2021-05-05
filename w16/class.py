@@ -1,3 +1,32 @@
+# Dev 1 attempt with OOP:
+
+class Users():
+    def __init__(self, name, password):
+        self.name = name
+    
+    def main_menu(self):
+        print(f"MAIN MENU for {self.name}")
+
+class Admin(Users):
+    def add_user(self):
+        new_user = input(f"Welcome {self.name}, please enter the name of the new user: ")
+        print(f"{new_user} has been added.")
+
+class Regular(Users):
+    def hello(self):
+        print(f"{self.name} Your choice are limited because you a regular user.")
+
+u1 = Users("Johnny", "12323")
+u2 = Admin("Peter", "pumpkineater")
+u3 = Regular("Jack", "pumpkin King")
+
+u2.main_menu()
+u2.add_user()
+
+u1.main_menu()
+u3.hello()
+
+# Fun OOP Version
 # Creating parent class:
 
 class Matrix():
@@ -39,7 +68,7 @@ neo = TheOne("Neo")
 smith = Agent("Smith")
 vien = Matrix("Vien")
 
-print("All though each class is using the same method, each have a different output: \n")
+print("\nAll though each class is using the same method, each have a different output: \n")
 neo.hello()
 smith.hello()
 vien.hello()
